@@ -23,11 +23,31 @@
         <label>Diagn&oacute;stico:</label>
         <br>
             <!--{{informacion}}-->
+            
         <div ng-repeat="x in campos">
+        
 
+        
+            <table class="table">
+                <tr> 
+               
+                    <th>Enfermedad:</th>
+                    <th>Sintomas Encontrados:</th>
+                    <th>Sintomas en total</th>
+                </tr> 
              
-                <strong>Enfermedad:</strong> {{ x.Enfermedad }} Sintomas Encontrados: <strong>{{ x.conteo_sintomas }}</strong>  Sintomas en total: <strong>{{ x.conteo_total }}</strong>.                      
-        </div>
+                <tr>
+                    <td>{{ x.Enfermedad }}</td>  
+                    <td>{{ x.conteo_sintomas }}</td>   
+                    <td>{{ x.conteo_total }}</td> 
+                </tr>   
+                
+              
+
+            </table> 
+            {{ x.a }}
+
+        </div> 
        
        
         
@@ -111,6 +131,7 @@
                                 }
                             }
                         var cad2 = sintomas;
+                        console.log(cad2);
                         
                         if( cad2.length > 0 )
                         {
@@ -137,5 +158,3 @@
 
 </body>
 </html>
-
-
