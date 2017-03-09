@@ -33,6 +33,7 @@ class Lista
 				//------------SQL Se traen datos----------------------------------------------------
 				//Selecciona todos los campos de una tabla
 				$sql = "SELECT * FROM  $tabla "; 
+				if( $sn_diagnostico_clinico == "s" ) echo "<div class='contenedor-sql-pruebas'>".$sql."</div>";
 				
 				
 
